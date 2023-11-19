@@ -1,9 +1,12 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
+import Container from "../components/Container";
 
 const Home: NextPage = () => {
-  return <div></div>;
+  return (
+    <Container>
+      <div className={`text-grenn-500 text-lg`}>Home</div>
+    </Container>
+  );
 };
 
 export default Home;
