@@ -1,10 +1,15 @@
 import React from "react";
 import Container from "../components/Container";
+import BlogPost from "../components/BlogPost";
 
 const Blog = () => {
   return (
     <Container>
-      <div className={`text-grenn-500 text-lg`}>Blog</div>
+      <div className={`mt-10 flex flex-col`}>
+        <BlogPost />
+        <BlogPost />
+        <BlogPost />
+      </div>
     </Container>
   );
 };
