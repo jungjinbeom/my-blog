@@ -1,15 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-const BlogPost = () => {
+const BlogPost = ({ date, title, des, slug }) => {
   return (
-    <Link href="/blog" passHref>
+    <Link href={`/blog/${slug}`} passHref>
       <a className={`w-full my-7 hover:-translate-x-1.5`}>
-        <div className="font-medium text-xs text-gray-400">2023.11.20 </div>
-        <div className={`font-extrablod text-2xl mt-2`}>제목</div>
-        <div className={`font-medium text-gray-600 text-xl mt-1`}>
-          게시물 설명
-        </div>
+        <div className="font-medium text-xs text-gray-400">{date}</div>
+        <div className={`font-extrablod text-2xl mt-2`}>{title}</div>
+        <div className={`font-medium text-gray-600 text-xl mt-1`}>{des}</div>
       </a>
     </Link>
   );
