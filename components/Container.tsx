@@ -5,6 +5,7 @@ import Image from "next/image";
 import metadata from "../data/metadata";
 
 const Container = (props) => {
+  console.log(Nav);
   return (
     <div className={`w-full flex flex-col items-center p-3`}>
       <Head>

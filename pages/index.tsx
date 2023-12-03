@@ -1,4 +1,4 @@
-import type { InferGetStaticPropsType, NextPage } from "next";
+import type { InferGetStaticPropsType } from "next";
 import Container from "../components/Container";
 import Image from "next/image";
 import metadata from "../data/metadata";
