@@ -12,9 +12,9 @@ const Home = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
           <Image
             src={`/home.jpg`}
             alt="대표 이미지"
-            width={`100%`}
-            height={45}
-            layout={`responsive`}
+            style={{ width: "800px", height: "310px" }}
+            width={800}
+            height={310}
             objectFit="cover"
             className={`rounded-3xl`}
           />

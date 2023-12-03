@@ -9,13 +9,12 @@ const RecentPosts = ({ posts }) => {
         {posts.slice(0, 5).map((post) => (
           <Link
             key={post._id}
+            className="mt-5"
             href={`/blog/${post._raw.flattenedPath}`}
             passHref
           >
-            <a className="mt-5">
-              <div className={`font-medium text-xl`}>{post.title}</div>
-              <div className={`font-light`}>{post.description}</div>
-            </a>
+            <div className={`font-medium text-xl`}>{post.title}</div>
+            <div className={`font-light`}>{post.description}</div>
           </Link>
         ))}
       </div>
