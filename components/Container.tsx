@@ -5,11 +5,19 @@ import Image from "next/image";
 import metadata from "../data/metadata";
 
 const Container = (props) => {
-  console.log(Nav);
+  const meta = {
+    title: metadata.title,
+    description: metadata.description,
+    author: metadata.author,
+    ...props.customMeta,
+  };
+
   return (
     <div className={`w-full flex flex-col items-center p-3`}>
       <Head>
-        <title>내 블로그</title>
+        <title>{meta.title}</title>
+        <meta content={meta.description} name="description" />
+        <meta property="og:site_name" content={meta.author} />
       </Head>
       <header
         className={`w-fill max-w-3xl flex flex-row justify-between items-center my-1`}

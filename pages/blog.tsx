@@ -5,7 +5,6 @@ import { InferGetStaticPropsType } from "next";
 import { allPosts } from "contentlayer/generated";
 
 const Blog = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  console.log(posts);
   return (
     <Container>
       <div className={`mt-10 flex flex-col`}>
